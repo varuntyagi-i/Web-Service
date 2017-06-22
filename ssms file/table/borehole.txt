@@ -1,0 +1,71 @@
+USE [ongc]
+GO
+
+/****** Object:  Table [dbo].[BOREHOLE]    Script Date: 6/22/2017 1:56:28 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[BOREHOLE](
+	[INSERT_DATE] [nvarchar](50) NOT NULL,
+	[INSERT_USER] [nvarchar](50) NOT NULL,
+	[PRODUCED_BY] [nvarchar](50) NOT NULL,
+	[SDAT_LABEL] [nvarchar](50) NOT NULL,
+	[UPDATE_DATE] [nvarchar](50) NOT NULL,
+	[UPDATE_USER] [nvarchar](50) NOT NULL,
+	[EXISTENCE_KIND] [nvarchar](50) NOT NULL,
+	[GUID] [nvarchar](50) NOT NULL,
+	[ID] [nvarchar](50) NOT NULL,
+	[VERSION] [nvarchar](50) NOT NULL,
+	[NAME] [nvarchar](50) NOT NULL,
+	[ORIGINAL_SOURCE] [nvarchar](50) NOT NULL,
+	[REMARKS] [nvarchar](50) NOT NULL,
+	[SOURCE] [nvarchar](50) NOT NULL,
+	[ACTUAL_HOLE_COST] [nvarchar](50) NOT NULL,
+	[BOREHOLE_NUMBER] [nvarchar](50) NOT NULL,
+	[BOREHOLE_REASON] [nvarchar](50) NOT NULL,
+	[BOREHOLE_SHAPE] [nvarchar](50) NOT NULL,
+	[BOREHOLE_TYPE] [nvarchar](50) NOT NULL,
+	[BOTTOM_LOCATION_ID] [nvarchar](50) NOT NULL,
+	[COST_CURRENCY] [nvarchar](50) NOT NULL,
+	[CURRENT_STATUS] [nvarchar](50) NOT NULL,
+	[CURRENT_STATUS_DATE] [nvarchar](50) NOT NULL,
+	[DRILLER_PBTD] [nvarchar](50) NOT NULL,
+	[DRILLER_TD_MD] [nvarchar](50) NOT NULL,
+	[DRILLER_TD_TVD] [nvarchar](50) NOT NULL,
+	[FINAL_DRILL_DATE] [nvarchar](50) NOT NULL,
+	[FINAL_RIG_RELEASE_DATE] [nvarchar](50) NOT NULL,
+	[FORMATION_AT_TD] [nvarchar](50) NOT NULL,
+	[HOLE_CONDITION] [nvarchar](50) NOT NULL,
+	[INITIAL_COMPLETION_DATE] [nvarchar](50) NOT NULL,
+	[INITIAL_LAHEE_CLASS] [nvarchar](50) NOT NULL,
+	[INJECTION_DATE] [nvarchar](50) NOT NULL,
+	[KICKOFF_METHOD] [nvarchar](50) NOT NULL,
+	[LAHEE_CLASS] [nvarchar](50) NOT NULL,
+	[LEGAL_SURVEY_ID] [nvarchar](50) NOT NULL,
+	[LOGGER_PBTD] [nvarchar](50) NOT NULL,
+	[LOGGER_TD_MD] [nvarchar](50) NOT NULL,
+	[LOGGER_TD_TVD] [nvarchar](50) NOT NULL,
+	[NOMINAL_PROD_MATERIAL] [nvarchar](50) NOT NULL,
+	[PLAN_HOLE_COST] [nvarchar](50) NOT NULL,
+	[PREFERRED_SURVEY_ID] [nvarchar](50) NOT NULL,
+	[PRODUCTION_DATE] [nvarchar](50) NOT NULL,
+	[SPUD_DATE] [nvarchar](50) NOT NULL,
+	[TIE_IN_BOREHOLE_ID] [nvarchar](50) NOT NULL,
+	[TOTAL_DEPTH_DATE] [nvarchar](50) NOT NULL,
+	[UBHI] [nvarchar](50) NOT NULL,
+	[WELL_ID] [nvarchar](50) NOT NULL,
+	[WHIPSTOCK_DEPTH] [nvarchar](50) NOT NULL,
+	[WORKING_COORD_SYSTEM_ID] [nvarchar](50) NOT NULL,
+	[HERM_TEST_DATE] [nvarchar](50) NOT NULL,
+	[TARGET_DEPTH] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_BOREHOLE] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+

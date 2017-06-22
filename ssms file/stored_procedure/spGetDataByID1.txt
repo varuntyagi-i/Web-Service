@@ -1,0 +1,7 @@
+Create Proc spGetDataByID1
+@ID nvarchar(50)
+as
+Begin
+ Select *
+ from FIELD where ID = @ID
+End

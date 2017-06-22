@@ -1,7 +1,7 @@
 USE [ongc]
 GO
 
-/****** Object:  Table [dbo].[FIELD]    Script Date: 6/18/2017 12:27:44 AM ******/
+/****** Object:  Table [dbo].[FIELD]    Script Date: 6/22/2017 1:57:49 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -38,3 +38,5 @@ CREATE TABLE [dbo].[FIELD](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
+
+

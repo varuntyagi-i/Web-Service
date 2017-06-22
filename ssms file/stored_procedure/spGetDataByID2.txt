@@ -1,0 +1,7 @@
+Create Proc spGetDataByID2
+@ID nvarchar(50)
+as
+Begin
+ Select *
+ from BOREHOLE where ID = @ID
+End
